@@ -5,4 +5,8 @@
 /* ============================================================
    MEMBER 13 — Cart Button Click Logic
    ============================================================ */
-// Member 13 adds cart button click logic here
+let cartCount = 0;
+document.getElementById("cart-btn").addEventListener ("click", function () {
+   cartCount++;
+   this.textContent = "Cart (" + cartCount + ")";
+});
